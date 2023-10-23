@@ -1,0 +1,76 @@
+
+body{
+    background:linear-gradient(135deg,#2b477f,#63376e);
+    font-family: 'Poppins', sans-serif;
+ }
+ .enroll{
+   background-color: black;
+ }
+ .container{
+    width: 450px;
+    padding: 33px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 30%;
+    margin-top: 55px;
+    border-radius: 10px;
+
+ }
+ h6{
+    position:absolute;
+    top: 118px;
+    left: 590px;
+    color: chocolate;
+ }
+ input{
+    width: 360px;
+    padding: 8px;
+    border: 2px solid rgb(6, 145, 145);
+    outline: none;
+    font-size: 19px;
+    border-radius: 3px;
+    margin-top: 5%;
+
+}
+ button{
+    width: 60px;
+    height: 41px;
+    background-color:rgb(130, 213, 6);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 4px;
+    font-size: 19px;
+ }
+ .listimage{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 745px;
+    top: 104px;
+ }
+ .text ul{
+    position: relative;
+    background-color: rgb(5, 31, 31);
+    color: white;
+    font-size: 19px;
+    padding: 7px;
+    text-align: left;
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
+
