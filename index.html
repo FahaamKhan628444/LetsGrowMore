@@ -1,37 +1,183 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>User Card</title>
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Responsive Regisration Form </title>
 </head>
 <body>
-    <div class="user-card">
-        <div class="user-header">
-            <img src="admin_person_user_man_2839.png" alt="" class="img">
-            <h1 id="user-name">Name: Fahaam Khan</h1>
-            <button id="edit-user-button">Edit</button>
-        </div>
-        <div class="user-info">
-            <p id="user-description">Profession: CSE Student</p>
-            <p id="user-email">Contact: fahaam98154@gmail.com</p>
-        </div>
-    </div>
+    <div class="container">
+        <h1>All India Scholarship Test 2023 </h1>
+        <header>Student Enrollment Form</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
 
-    <!-- User Information Modal -->
-    <div id="user-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <h2>Edit User Information</h2>
-            <label for="new-name">Name:</label>
-            <input type="text" id="new-name" value="John Doe">
-            <label for="new-description">Description:</label>
-            <input type="text" id="new-description" value="Web Developer">
-            <label for="new-email">Email:</label>
-            <input type="email" id="new-email" value="johndoe@example.com">
-            <button id="save-user-button">Save</button>
-        </div>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter Current Address" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Qualification</span>
+                    <h4>12th Class Marks</h4>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>School Board</label>
+                            <select required>
+                                <option disabled selected>Select board</option>
+                                <option>PSEB</option>
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>School Name</label>
+                            <input type="text" placeholder="Enter school name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Percentage</label>
+                            <input type="text" placeholder="Enter percentage" required>
+                        </div>
+
+
+                        
+                        <div class="input-field">
+                            <label>State</label>
+                            <select required>
+                                <option disabled selected>Select State</option>
+                                <option value="AN">Andaman and Nicobar Islands</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CH">Chandigarh</option>
+    <option value="CT">Chhattisgarh</option>
+    <option value="DN">Dadra and Nagar Haveli</option>
+    <option value="DD">Daman and Diu</option>
+    <option value="DL">Delhi</option>
+    <option value="GA">Goa</option>
+    <option value="GJ">Gujarat</option>
+    <option value="HR">Haryana</option>
+    <option value="HP">Himachal Pradesh</option>
+    <option value="JK">Jammu and Kashmir</option>
+    <option value="JH">Jharkhand</option>
+    <option value="KA">Karnataka</option>
+    <option value="KL">Kerala</option>
+    <option value="LA">Ladakh</option>
+    <option value="LD">Lakshadweep</option>
+    <option value="MP">Madhya Pradesh</option>
+    <option value="MH">Maharashtra</option>
+    <option value="MN">Manipur</option>
+    <option value="ML">Meghalaya</option>
+    <option value="MZ">Mizoram</option>
+    <option value="NL">Nagaland</option>
+    <option value="OR">Odisha</option>
+    <option value="PY">Puducherry</option>
+    <option value="PB">Punjab</option>
+    <option value="RJ">Rajasthan</option>
+    <option value="SK">Sikkim</option>
+    <option value="TN">Tamil Nadu</option>
+    <option value="TG">Telangana</option>
+    <option value="TR">Tripura</option>
+    <option value="UP">Uttar Pradesh</option>
+    <option value="UT">Uttarakhand</option>
+    <option value="WB">West Bengal</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <select required>
+                                <option disabled selected>Select district</option>
+    <option value="AR">Amritsar</option>
+    <option value="AS">Barnala</option>
+    <option value="BR">Bathinda</option>
+    <option value="CH">Fardidkot</option>
+    <option value="CT">Fatehgarh Sahib</option>
+    <option value="DN">Firozpur</option>
+    <option value="DD">Fazilka</option>
+    <option value="DL">Gurdaspur</option>
+    <option value="GA">Hoshiarpur</option>
+    <option value="GJ">Jalandhar</option>
+    <option value="HR">Kapurthala</option>
+    <option value="HP">Ludhiana</option>
+    <option value="JK">Mansa</option>
+    <option value="JH">Malerkotla</option>
+    <option value="KA">Moga</option>
+    <option value="KL">Sri Muktsar Sahib</option>
+    <option value="LA">Pathankot</option>
+    <option value="LD">Patiala</option>
+    <option value="MP">Rupnagar</option>
+    <option value="MH">Sahibzada Agit Singh Nagar</option>
+    <option value="MN">Sangrur</option>
+    <option value="ML">Shahid Bhagat Singh Nagar</option>
+    <option value="MZ">Tarn Taran</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter city" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Submit</span>
+                        
+                    </button>
+                </div> 
+            </div>
+
+            
+        </form>
     </div>
 
     <script src="script.js"></script>
