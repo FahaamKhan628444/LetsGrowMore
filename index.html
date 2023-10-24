@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Calculator Project</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="utils.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>User Card</title>
 </head>
-
 <body>
-  <h1 class="text-center">Calculator Project</h1>
-  <div class="container flex flex-col items-center mx-auto m-w-20">
-    <div class="row">
-      <input class="input" type="text"/>
+    <div class="user-card">
+        <div class="user-header">
+            <img src="admin_person_user_man_2839.png" alt="" class="img">
+            <h1 id="user-name">Name: Fahaam Khan</h1>
+            <button id="edit-user-button">Edit</button>
+        </div>
+        <div class="user-info">
+            <p id="user-description">Profession: CSE Student</p>
+            <p id="user-email">Contact: fahaam98154@gmail.com</p>
+        </div>
     </div>
-    <div class="row">
-      <button class="button">C</button>
-      <button class="button">%</button>
-      <button class="button">M+</button>
-      <button class="button">M-</button>
-    </div>
-    <div class="row">
-      <button class="button">7</button>
-      <button class="button">8</button>
-      <button class="button">9</button>
-      <button class="button">*</button>
-    </div>
-    <div class="row">
-      <button class="button">4</button>
-      <button class="button">5</button>
-      <button class="button">6</button>
-      <button class="button">/</button>
-    </div>
-    <div class="row">
-      <button class="button">1</button>
-      <button class="button">2</button>
-      <button class="button">3</button>
-      <button class="button">+</button>
-    </div>
-    <div class="row">
-      <button class="button">0</button>
-      <button class="button">.</button>
-      <button class="button">=</button>
-      <button class="button">-</button>
-    </div>
-  </div>
-  <footer>
-    <p><button>Made by Fahaam Khan</button></p>
-  </footer>
-  <script src="script.js"></script> 
-</body>
 
+    <!-- User Information Modal -->
+    <div id="user-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Edit User Information</h2>
+            <label for="new-name">Name:</label>
+            <input type="text" id="new-name" value="John Doe">
+            <label for="new-description">Description:</label>
+            <input type="text" id="new-description" value="Web Developer">
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" value="johndoe@example.com">
+            <button id="save-user-button">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
